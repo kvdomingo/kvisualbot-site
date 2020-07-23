@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "command": "ping",
+      "required": [],
+      "optional": [],
+      "description": "Get bot response time in milliseconds."
+    },
+    {
+    "command": "clear|purge|sanitize",
+    "required": [],
+    "optional": ["limit"],
+    "description": "Clear the specified amount of messages, excluding the command used (default = 1)."
+    }
+  ]
+}

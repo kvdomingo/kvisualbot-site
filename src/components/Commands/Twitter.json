@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "command": "twitter subscribe|sub",
+      "required": ["group"],
+      "optional": [],
+      "description": "Subscribe the current channel to hourly updates of the selected group."
+    },
+    {
+      "command": "twitter unsubscribe|usub",
+      "required": ["group"],
+      "optional": [],
+      "description": "Unsubscribe the current channel to hourly updates of the selected group."
+    }
+  ]
+}

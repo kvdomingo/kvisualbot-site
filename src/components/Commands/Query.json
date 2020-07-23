@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "command": "blackpink|bp|pink|mink",
+      "required": [],
+      "optional": ["member"],
+      "description": "Get a random picture of the specified member of BLACKPINK, or get a random member if no member specified."
+    },
+    {
+      "command": "bts|bangtan",
+      "required": [],
+      "optional": ["member"],
+      "description": "Get a random picture of the specified member of BTS, or get a random member if no member specified."
+    },
+    {
+      "command": "itz|itzy",
+      "required": [],
+      "optional": ["member"],
+      "description": "Get a random picture of the specified member of ITZY, or get a random member if no member specified."
+    },
+    {
+      "command": "iu",
+      "required": [],
+      "optional": [],
+      "description": "Get a random picture of IU."
+    },
+    {
+      "command": "mamamoo|mama",
+      "required": [],
+      "optional": ["member"],
+      "description": "Get a random picture of the specified member of MAMAMOO, or get a random member if no member specified."
+    },
+    {
+      "command": "red-velvet|red|velvet|rv|reve",
+      "required": [],
+      "optional": ["member"],
+      "description": "Get a random picture of the specified member of RED VELVET, or get a random member if no member specified."
+    },
+    {
+      "command": "somi",
+      "required": [],
+      "optional": [],
+      "description": "Get a random picture of Somi."
+    },
+    {
+      "command": "twice|more",
+      "required": [],
+      "optional": ["member"],
+      "description": "Get a random picture of the specified member of TWICE, or get a random member if no member specified."
+    }
+  ]
+}

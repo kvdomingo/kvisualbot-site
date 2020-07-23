@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "command": "vlive subscribe|sub",
+      "required": ["group"],
+      "optional": [],
+      "description": "Subscribe the current channel to VLIVE notifications of the selected group."
+    },
+    {
+      "command": "vlive unsubscribe|usub",
+      "required": ["group"],
+      "optional": [],
+      "description": "Unsubscribe the current channel to VLIVE notifications of the selected group."
+    }
+  ]
+}
