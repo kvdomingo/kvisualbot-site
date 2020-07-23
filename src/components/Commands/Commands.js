@@ -13,7 +13,7 @@ import PropTypes from 'prop-types';
 
 function Commands({ header, commands }) {
     return (
-        <Card className='my-3'>
+        <Card className='my-3' id={header.toLowerCase()}>
             <CardHeader>{header} commands</CardHeader>
             <CardBody>
                 <ListGroup>

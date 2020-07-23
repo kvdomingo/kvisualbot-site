@@ -7,7 +7,13 @@ import {
     Nav,
     NavItem,
     NavLink,
+    NavbarText,
+    UncontrolledDropdown as Dropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
 } from 'reactstrap';
+import { Image } from 'cloudinary-react';
 
 
 export default class Navigation extends React.Component {
@@ -20,16 +26,51 @@ export default class Navigation extends React.Component {
     }
 
     render() {
+        const menuItems = [
+            "Convenience",
+            "Query",
+            "Twitter",
+            "VLIVE",
+        ];
+
         return (
             <div>
                 <Navbar color='light' light expand='lg'>
-                    <NavbarBrand href='/'>KVISUALBOT</NavbarBrand>
+                    <NavbarBrand href='/'>
+                        <Image
+                            cloudName='kdphotography-assets'
+                            className='img-fluid'
+                            publicId='kvisualbot/avatar'
+                            secure
+                            aspectRatio='1'
+                            radius='max'
+                            crop='fill'
+                            gravity='face'
+                            height={60}
+                            />
+                    </NavbarBrand>
+                    <NavbarText className='mr-3'>
+                        <NavLink href='/'>
+                            KVISUALBOT
+                        </NavLink>
+                    </NavbarText>
                     <NavbarToggler onClick={this.toggleNavbar} />
                     <Collapse isOpen={this.state.isOpen} navbar>
+                        <Nav navbar>
+                            <Dropdown nav inNavbar>
+                                <DropdownToggle nav caret>
+                                    Commands
+                                </DropdownToggle>
+                                <DropdownMenu right>
+                                    {menuItems.map((item, i) => (
+                                        <DropdownItem key={i}>
+                                            <NavLink href={`#${item.toLowerCase()}`}>{item}</NavLink>
+                                        </DropdownItem>
+                                    ))}
+                                </DropdownMenu>
+                            </Dropdown>
+                        </Nav>
                         <Nav className='ml-auto' navbar>
-                            <NavItem>
-                                <NavLink href='/'>Commands</NavLink>
-                            </NavItem>
                             <NavItem className='mx-1'>
                                 <a href='https://discord.gg/jQ5dpeN' className='btn btn-outline-primary'>
                                     Discord
