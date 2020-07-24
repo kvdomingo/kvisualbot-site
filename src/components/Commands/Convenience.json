@@ -10,7 +10,7 @@
     "command": "clear|purge|sanitize",
     "required": [],
     "optional": ["limit"],
-    "description": "Clear the specified amount of messages, excluding the command used (default = 1)."
+    "description": "Delete the specified amount of messages in the channel. The command itself is excluded from the count. Defaults to 1 if limit is not specified."
     }
   ]
 }

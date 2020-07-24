@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "command": "admin meta|status",
+      "required": [],
+      "optional": [],
+      "description": "Get technical data on the status of the bot, including uptime."
+    },
+    {
+      "command": "admin group get",
+      "required": [],
+      "optional": ["group-name"],
+      "description": "Get details for the specified group, or check if the bot already supports the group. If no group specified, returns all supported groups/artists."
+    },
+    {
+      "command": "admin group add|create",
+      "required": ["group-name"],
+      "optional": [],
+      "description": "Add support for a group/artist."
+    },
+    {
+      "command": "admin group update|edit",
+      "required": ["old-name", "new-name"],
+      "optional": [],
+      "description": "Change the name of a group."
+    },
+    {
+      "command": "admin member get",
+      "required": ["group-name"],
+      "optional": ["member-name"],
+      "description": "Get details for the specified member of a group. If no member specified, returns all members of the group."
+    },
+    {
+      "command": "admin member add|create",
+      "required": [
+        "group-name",
+        "stage-name",
+        "family-name",
+        "birth-name"
+      ],
+      "optional": [],
+      "description": "Add a member to a specified group."
+    },
+    {
+      "command": "admin alias get",
+      "required": ["group-name", "member-name"],
+      "optional": ["alias"],
+      "description": "Get details for a specified alias of a member. If no alias specified, returns all aliases for that member."
+    },
+    {
+      "command": "admin alias add|create",
+      "required": ["group-name", "member-name", "alias"],
+      "optional": [],
+      "description": "Add an alias for a specified member."
+    },
+    {
+      "command": "admin alias delete",
+      "required": ["group-name", "member-name", "alias"],
+      "optional": [],
+      "description": "Remove the specified alias for a member."
+    },
+    {
+      "command": "admin account get",
+      "required": ["group-name", "member-name"],
+      "optional": ["twitter-handle"],
+      "description": "Get details for the specified Twitter account. If no handle specified, returns all source accounts for that member."
+    },
+    {
+      "command": "admin account add|create",
+      "required": ["group-name", "member-name", "twitter-handle"],
+      "optional": [],
+      "description": "Add a source Twitter account to the specified member."
+    },
+    {
+      "command": "admin account delete",
+      "required": ["group-name", "member-name", "twitter-handle"],
+      "optional": [],
+      "description": "Delete the specified source Twitter account from the member."
+    }
+  ]
+}
