@@ -25,7 +25,7 @@
       "description": "Get a random picture of IU."
     },
     {
-      "command": "mamamoo|mama",
+      "command": "mamamoo|moo",
       "required": [],
       "optional": ["member"],
       "description": "Get a random picture of the specified member of MAMAMOO, or get a random member if no member specified."
