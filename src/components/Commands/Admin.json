@@ -15,7 +15,7 @@
     {
       "command": "admin group add|create",
       "required": ["group-name"],
-      "optional": [],
+      "optional": ["vlive-channel-code", "vlive-channel-seq", "vlive-last-seq"],
       "description": "Add support for a group/artist."
     },
     {

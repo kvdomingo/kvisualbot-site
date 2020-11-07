@@ -47,6 +47,18 @@
       "required": [],
       "optional": ["member"],
       "description": "Get a random picture of the specified member of TWICE, or get a random member if no member specified."
+    },
+    {
+      "command": "aespa|æspa|ae|æ",
+      "required": [],
+      "optional": ["member"],
+      "description": "Get a random picture of the specified member of aespa, or get a random member if no member specified."
+    },
+    {
+      "command": "exo",
+      "required": [],
+      "optional": ["member"],
+      "description": "Get a random picture of the specified member of EXO, or get a random member if no member specified."
     }
   ]
 }
