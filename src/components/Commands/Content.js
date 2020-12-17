@@ -8,10 +8,8 @@ import convenience from "./Convenience.json";
 import query from "./Query.json";
 import twitter from "./Twitter.json";
 import vlive from "./Vlive.json";
-import mama2020 from "./Mama2020.json";
 
 const commands = [
-  { header: "MAMA 2020", commands: mama2020, newCommand: true },
   { header: "Convenience", commands: convenience },
   { header: "Query", commands: query },
   { header: "Twitter", commands: twitter },
