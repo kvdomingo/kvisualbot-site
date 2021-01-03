@@ -9,8 +9,7 @@ export default function Legend() {
       </CardHeader>
       <CardBody>
         Listed here are the commands for <b>KVISUALBOT</b> that can be used within a server channel. All commands are
-        prefixed by <code>!</code>. All arguments are case-insensitive except for admin commands. Admin commands can
-        only be accessed by devs and admins.
+        prefixed by <kbd>!</kbd>.
       </CardBody>
     </Card>
   );

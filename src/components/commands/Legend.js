@@ -8,7 +8,7 @@ export default function Legend() {
       <CardBody>
         <ListGroup>
           <ListGroupItem>
-            <code>!command|alternate-command1|alternate-command2 [required-argument] (optional-argument)</code>
+            <code>!command|alias1|alias2 [required-argument] (optional-argument)</code>
           </ListGroupItem>
         </ListGroup>
       </CardBody>

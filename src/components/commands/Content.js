@@ -3,18 +3,14 @@ import { Container } from "reactstrap";
 import Legend from "./Legend";
 import Header from "./Header";
 import Commands from "./Commands";
+import main from "./Main.json";
+import subscriptions from "./Subscriptions.json";
 import admin from "./Admin.json";
-import convenience from "./Convenience.json";
-import query from "./Query.json";
-import twitter from "./Twitter.json";
-import vlive from "./Vlive.json";
 
-const commands = [
-  { header: "Convenience", commands: convenience },
-  { header: "Query", commands: query },
-  { header: "Twitter", commands: twitter },
-  { header: "VLIVE", commands: vlive },
-  { header: "Admin", commands: admin },
+export const commands = [
+  { header: "Main", commands: main },
+  { header: "Subscription", commands: subscriptions },
+  { header: "Restricted/Experimental", commands: admin },
 ];
 
 export default function Content() {
